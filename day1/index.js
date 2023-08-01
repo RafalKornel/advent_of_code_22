@@ -1,17 +1,17 @@
+import { readTextFile } from "../read_text_file.js";
+
 /**
  * Description
  * @param {string} filepath
  * @returns {Promise<number>}
  */
 async function run(filepath) {
-  const fileData = await Deno.readFile(filepath);
-
-  const textContents = new TextDecoder().decode(fileData);
+  const lines = await readTextFile(filepath);
 
   let elvesCalories = [];
   let currentElfCalories = 0;
 
-  for (const line of textContents.split("\n")) {
+  for (const line of lines) {
     if (line === "") {
       elvesCalories.push(currentElfCalories);
 

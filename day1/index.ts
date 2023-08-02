@@ -1,4 +1,4 @@
-import { readTextFile } from "../read_text_file.ts";
+import { readTextFile } from "../utils.ts";
 
 function run(filepath: string): number {
   const lines = readTextFile(filepath);
@@ -34,6 +34,6 @@ function run(filepath: string): number {
   return sum;
 }
 
-const result = run("./data.txt");
+const result = run("./input.txt");
 
 console.log(result);

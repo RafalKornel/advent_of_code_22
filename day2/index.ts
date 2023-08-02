@@ -1,4 +1,4 @@
-import { readTextFile } from "../read_text_file.ts";
+import { readTextFile } from "../utils.ts";
 
 // INPUT    | ROCK     | PAPER     | SCISSORS
 

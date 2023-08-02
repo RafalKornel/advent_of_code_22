@@ -1,14 +1,10 @@
-import { readTextFile } from "../read_text_file.js";
+import { readTextFile } from "../read_text_file.ts";
 
-/**
- * Description
- * @param {string} filepath
- * @returns {Promise<number>}
- */
-async function run(filepath) {
-  const lines = await readTextFile(filepath);
+function run(filepath: string): number {
+  const lines = readTextFile(filepath);
 
-  let elvesCalories = [];
+  // deno-lint-ignore prefer-const
+  let elvesCalories: number[] = [];
   let currentElfCalories = 0;
 
   for (const line of lines) {
@@ -38,6 +34,6 @@ async function run(filepath) {
   return sum;
 }
 
-const result = await run("./data.txt");
+const result = run("./data.txt");
 
 console.log(result);

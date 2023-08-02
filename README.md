@@ -2,4 +2,4 @@
 
 https://adventofcode.com/
 
-Each folder contains script written in JavaScript ([Deno](https://deno.com/))
+Each folder contains script written in TypeScript ([Deno](https://deno.com/))

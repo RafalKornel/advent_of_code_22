@@ -1,4 +1,4 @@
-import { readTextFile } from "../utils.ts";
+// https://adventofcode.com/2022/day/6
 
 function findStartOfPacket(signal: string, windowLength: number): number {
   if (signal.length < windowLength) throw new Error("Signal too small!");
@@ -16,15 +16,5 @@ function findStartOfPacket(signal: string, windowLength: number): number {
   return 0;
 }
 
-// const testData = readTextFile("./test_data.txt");
-
-// testData.forEach((testLine) => {
-//   console.log(first(testLine));
-// });
-
-const first = (signal: string) => findStartOfPacket(signal, 4);
-const second = (signal: string) => findStartOfPacket(signal, 14);
-
-const [input] = readTextFile("./input.txt");
-
-console.log(second(input));
+export const first = (signal: string) => findStartOfPacket(signal, 4);
+export const second = (signal: string) => findStartOfPacket(signal, 14);

@@ -115,4 +115,5 @@ const test_data = readTextFile("./test_data.txt");
 
 const input = readTextFile("./input.txt");
 
-console.log(second(input));
+console.log(first(input)); // 6243
+console.log(second(input)); // 2630

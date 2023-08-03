@@ -145,7 +145,7 @@ function first(input: string[]): [number, number] {
   return [visibleTrees, biggestScenicScore];
 }
 
-const test_data = readTextFile("./test_data.txt");
+// const test_data = readTextFile("./test_data.txt");
 const input = readTextFile("./input.txt");
 
 const res = first(input);

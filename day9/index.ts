@@ -111,7 +111,7 @@ function second(input: string[]) {
   return run(head, input);
 }
 
-const test_data = readTextFile("./test_data.txt");
+// const test_data = readTextFile("./test_data.txt");
 
 const input = readTextFile("./input.txt");
 
